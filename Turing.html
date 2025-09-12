@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alan Turing: Pioneer of Computing & AI</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 1rem;
+        }
+        .slide-container {
+            background-color: white;
+            border-radius: 1.5rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            width: 100%;
+            max-width: 960px;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            min-height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .slide {
+            display: none;
+            flex-grow: 1;
+            padding: 2.5rem;
+        }
+        .slide.active {
+            display: flex;
+            flex-direction: column;
+        }
+        .link-button {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            transition: background-color 0.2s;
+        }
+        .link-button:hover {
+            background-color: #2563eb;
+        }
+        .navigation-buttons {
+            display: flex;
+            justify-content: space-between;
+            padding: 1.5rem 2.5rem;
+            border-top: 1px solid #e5e7eb;
+        }
+        .nav-btn {
+            background-color: #4b5563;
+            color: white;
+            font-weight: 600;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.75rem;
+            transition: background-color 0.2s;
+        }
+        .nav-btn:hover:not(:disabled) {
+            background-color: #1f2937;
+        }
+        .nav-btn:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+    </style>
+</head>
+<body class="bg-gray-100">
+
+<div class="slide-container">
+    <!-- Slides Content -->
+    <div id="slide-1" class="slide active">
+        <h1 class="text-4xl font-extrabold text-gray-900 text-center mb-6">Alan Turing: Pioneer of Computing & AI</h1>
+        <p class="text-xl text-gray-700 text-center mb-8 flex-grow">
+            Alan Mathison Turing, a British mathematician, logician, and computer scientist, is widely regarded as the father of theoretical computer science and artificial intelligence. His visionary work laid the foundation for the digital world we live in today.
+        </p>
+        <div class="flex justify-center items-center">
+            <svg class="w-2/3 h-auto max-w-sm rounded-lg shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <path d="M12 2a10 10 0 0 0 0 20"></path>
+                <path d="M2 12h20"></path>
+                <path d="M12 2a10 10 0 0 1 0 20"></path>
+                <path d="M2 12a10 10 0 0 0 20 0"></path>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+            </svg>
+        </div>
+    </div>
+
+    <div id="slide-2" class="slide">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Early Life and Education</h2>
+        <p class="text-lg text-gray-700 mb-4">
+            Born on June 23, 1912, in London, Turing showed an early talent for mathematics and science. Despite struggles with his conventional schooling at Sherborne School, his genius was apparent. He later studied at King's College, Cambridge, and earned a PhD from Princeton University in 1938.
+        </p>
+        <div class="flex justify-center items-center my-6">
+            <svg class="w-full h-auto max-w-sm rounded-lg shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                <path d="M2 17l10 5 10-5"></path>
+                <path d="M2 12l10 5 10-5"></path>
+            </svg>
+        </div>
+        <a href="https://www.theiet.org/membership/library-and-archives/the-iet-archives/biographies/alan-turing" target="_blank" class="link-button mx-auto mt-6">Read a Full Biography</a>
+    </div>
+
+    <div id="slide-3" class="slide">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">The Turing Machine and the Bombe</h2>
+        <p class="text-lg text-gray-700 mb-4">
+            In a 1936 paper, Turing introduced the concept of the **Turing machine**, a theoretical model of computation that became the basis for modern computers. This abstract device proved that a single, universal machine could solve any computational problem. During WWII at Bletchley Park, he applied this thinking to a real-world problem, designing the **Bombe**, an electromechanical machine that was instrumental in deciphering German Enigma codes.
+        </p>
+        <div class="flex justify-center items-center my-6">
+            <svg class="w-full h-auto max-w-sm rounded-lg shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect>
+                <path d="M12 2v5"></path>
+                <path d="M6 2v5"></path>
+                <path d="M18 2v5"></path>
+            </svg>
+        </div>
+        <a href="https://www.youtube.com/watch?v=sU142_mQJ5A" target="_blank" class="link-button mx-auto mt-6">Watch a video about the Bombe</a>
+    </div>
+
+    <div id="slide-4" class="slide">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">The Turing Test</h2>
+        <p class="text-lg text-gray-700 mb-4">
+            In his 1950 paper, "Computing Machinery and Intelligence," Turing proposed the **Turing Test** (or "Imitation Game") to address the question, "Can machines think?" The test involves a human interrogator who communicates with both a human and a machine. If the interrogator cannot reliably distinguish the machine from the human, the machine is said to have passed the test.
+        </p>
+        <div class="flex justify-center items-center my-6">
+            <svg class="w-full h-auto max-w-sm rounded-lg shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M16 18a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2z"></path>
+                <line x1="12" y1="12" x2="12" y2="12"></line>
+                <line x1="8" y1="12" x2="8" y2="12"></line>
+                <line x1="16" y1="12" x2="16" y2="12"></line>
+                <line x1="12" y1="8" x2="12" y2="8"></line>
+                <line x1="8" y1="8" x2="8" y2="8"></line>
+                <line x1="16" y1="8" x2="16" y2="8"></line>
+                <line x1="12" y1="16" x2="12" y2="16"></line>
+                <line x1="8" y1="16" x2="8" y2="16"></line>
+                <line x1="16" y1="16" x2="16" y2="16"></line>
+            </svg>
+        </div>
+        <a href="https://www.youtube.com/watch?v=3wLqsRLvV-c" target="_blank" class="link-button mx-auto mt-6">See a TED-Ed video on the Turing Test</a>
+    </div>
+    
+    <div id="slide-5" class="slide">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Influence on Modern AI</h2>
+        <p class="text-lg text-gray-700 mb-4">
+            Turing's vision for "learning machines" was decades ahead of its time. His ideas laid the groundwork for key concepts in modern AI, including:
+            <ul class="list-disc list-inside mt-4 space-y-2">
+                <li>**Machine Learning:** The concept of systems that learn from data without explicit programming.</li>
+                <li>**Genetic Algorithms:** An evolutionary approach to problem-solving.</li>
+                <li>**Reinforcement Learning:** Agents that learn optimal behavior through trial and error.</li>
+            </ul>
+        </p>
+        <div class="flex justify-center items-center my-6">
+            <svg class="w-full h-auto max-w-sm rounded-lg shadow-lg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="2" x2="12" y2="22"></line>
+                <line x1="2" y1="12" x2="22" y2="12"></line>
+                <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+                <line x1="19.07" y1="4.93" x2="4.93" y2="19.07"></line>
+            </svg>
+        </div>
+        <a href="https://startupsgurukul.com/blog/2024/05/08/the-turing-revolution-how-alan-turing-shaped-the-future-of-technology/" target="_blank" class="link-button mx-auto mt-6">Explore Turing's impact on AI</a>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="navigation-buttons">
+        <button id="prevBtn" class="nav-btn" disabled>Previous</button>
+        <button id="nextBtn" class="nav-btn">Next</button>
+    </div>
+</div>
+
+<script>
+    const slides = document.querySelectorAll('.slide');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    let currentSlide = 0;
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) {
+                slide.classList.add('active');
+            }
+        });
+        prevBtn.disabled = index === 0;
+        nextBtn.disabled = index === slides.length - 1;
+    }
+
+    prevBtn.addEventListener('click', () => {
+        if (currentSlide > 0) {
+            currentSlide--;
+            showSlide(currentSlide);
+        }
+    });
+
+    nextBtn.addEventListener('click', () => {
+        if (currentSlide < slides.length - 1) {
+            currentSlide++;
+            showSlide(currentSlide);
+        }
+    });
+
+    // Initial load
+    window.onload = () => {
+        showSlide(currentSlide);
+    };
+</script>
+
+</body>
+</html>
