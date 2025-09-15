@@ -1,0 +1,243 @@
+html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Allen Newell: A Pioneer of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d121c;
+            color: #d1d5db;
+        }
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .slide-content {
+            max-width: 900px;
+            background-color: #1f2937;
+            padding: 2.5rem;
+            border-radius: 1.5rem;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+            border: 1px solid #374151;
+        }
+        .button {
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+        .button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .link-button {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-width: 200px;
+        }
+    </style>
+</head>
+<body class="selection:bg-indigo-500 selection:text-white">
+
+    <!-- Container for the slides -->
+    <div class="slides-container">
+        
+        <!-- Slide 1: Title Slide -->
+        <div id="slide1" class="slide active">
+            <div class="slide-content">
+                <h1 class="text-4xl sm:text-5xl font-extrabold text-indigo-400 mb-4 tracking-tight">Allen Newell: A Pioneer of AI</h1>
+                <h2 class="text-2xl sm:text-3xl font-semibold text-gray-300 mb-6">Shaping the Foundations of Artificial Intelligence</h2>
+                
+                <p class="text-lg text-gray-400 mb-8">This presentation explores the profound impact of Allen Newell's work on AI and cognitive science.</p>
+                <button id="nextBtn1" class="button bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-3 px-8 rounded-full shadow-lg">Start Presentation</button>
+            </div>
+        </div>
+
+        <!-- Slide 2: The Physical Symbol System -->
+        <div id="slide2" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-400 mb-4">The Physical Symbol System Hypothesis</h2>
+                <p class="text-lg text-gray-300 mb-6">Newell and his colleague Herbert A. Simon proposed a foundational idea for AI.</p>
+                
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 mb-8">
+                    
+                    <div class="text-left">
+                        <p class="text-md sm:text-lg text-gray-300 mb-4">
+                            The "physical symbol system hypothesis" states that a physical system that can manipulate symbols has the necessary and sufficient means for intelligent action.
+                        </p>
+                        <ul class="list-disc list-inside text-left text-md sm:text-lg text-gray-300 space-y-2 mb-4">
+                            <li><strong>Symbols:</strong> Abstract representations of objects, concepts, or information.</li>
+                            <li><strong>Manipulation:</strong> The ability to create, modify, and combine these symbols according to a set of rules.</li>
+                        </ul>
+                        <p class="text-sm text-gray-400">
+                           This hypothesis became a cornerstone of AI research, shifting the focus from numerical computation to symbolic reasoning.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <button id="prevBtn2" class="button bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Previous</button>
+                    <button id="nextBtn2" class="button bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Landmark Programs -->
+        <div id="slide3" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-400 mb-4">Landmark Programs: GPS and Logic Theorist</h2>
+                <p class="text-lg text-gray-300 mb-6">Newell and Simon didn't just theorize; they built and tested their ideas with groundbreaking programs.</p>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 mb-8">
+                    
+                    <div class="text-left">
+                        <ul class="list-disc list-inside text-left text-md sm:text-lg text-gray-300 space-y-3 mb-4">
+                            <li><strong>Logic Theorist (1956):</strong> Considered the first true artificial intelligence program. It was designed to prove theorems in symbolic logic, demonstrating that a computer could perform creative, problem-solving tasks.</li>
+                            <li><strong>General Problem Solver (GPS):</strong> An advancement of the Logic Theorist, GPS used a technique called "means-ends analysis" to solve problems. It worked by continuously reducing the difference between the current state and the desired goal state.</li>
+                        </ul>
+                        <div class="mt-4">
+                            <a href="https://amturing.acm.org/award_winners/newell_3167755.cfm" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full shadow-lg">
+                                <span class="mr-2">Read About their Turing Award</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M11 3a1 1 0 100 2h3.293l-5.646 5.646a1 1 0 001.414 1.414L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z" />
+                                    <path d="M4 11a1 1 0 100 2h6a1 1 0 001-1v-6a1 1 0 10-2 0v5H4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <button id="prevBtn3" class="button bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Previous</button>
+                    <button id="nextBtn3" class="button bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Next</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 4: Unified Theories of Cognition -->
+        <div id="slide4" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-400 mb-4">The Quest for a Unified Theory of Cognition</h2>
+                <p class="text-lg text-gray-300 mb-6">Newell believed that a single architecture could explain all human intelligence.</p>
+
+                <div class="flex flex-col md:flex-row items-center md:items-start space-y-6 md:space-y-0 md:space-x-8 mb-8">
+                    
+                    <div class="text-left">
+                        <p class="text-md sm:text-lg text-gray-300 mb-4">
+                            His later work focused on developing a single "cognitive architecture" named <strong>Soar</strong>. Soar was designed to model a wide range of human cognitive abilities, from simple motor skills to complex problem-solving. It aimed to be a unified theory of cognition, a singular system that could perform all intelligent tasks.
+                        </p>
+                        <div class="mt-4">
+                            <a href="https://www.chessprogramming.org/Allen_Newell" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full shadow-lg">
+                                <span class="mr-2">More on Soar and his work</span>
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                                    <path d="M11 3a1 1 0 100 2h3.293l-5.646 5.646a1 1 0 001.414 1.414L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z" />
+                                    <path d="M4 11a1 1 0 100 2h6a1 1 0 001-1v-6a1 1 0 10-2 0v5H4z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flex justify-between mt-8">
+                    <button id="prevBtn4" class="button bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Previous</button>
+                    <button id="nextBtn4" class="button bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Next</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slide 5: Legacy -->
+        <div id="slide5" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold text-indigo-400 mb-4">Legacy and Lasting Impact</h2>
+                <p class="text-lg sm:text-xl text-gray-300 mb-8">Newell's work continues to influence modern AI and our understanding of intelligence.</p>
+                
+                <p class="text-md sm:text-lg text-gray-300 mb-4">His focus on modeling human cognition and his belief in symbolic reasoning have had a lasting impact. Today, while machine learning dominates, the principles of symbolic AI are still active in fields like knowledge representation and logical reasoning. His pioneering work is a testament to the interdisciplinary nature of AI.</p>
+                <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                     <a href="https://www.youtube.com/watch?v=hCe0ZPGap_k" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full shadow-lg">
+                        <span class="mr-2">Watch Newell's Turing Award Talk</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h3.293l-5.646 5.646a1 1 0 001.414 1.414L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z" />
+                            <path d="M4 11a1 1 0 100 2h6a1 1 0 001-1v-6a1 1 0 10-2 0v5H4z" />
+                        </svg>
+                    </a>
+                    <a href="https://www.youtube.com/playlist?list=PLjq6DwYksrzz_fsWIpPcf6V7p2RNAneKc" target="_blank" class="link-button bg-gray-600 hover:bg-gray-700 text-white font-semibold py-2 px-4 rounded-full shadow-lg">
+                        <span class="mr-2">Explore the Age of A.I. documentary</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4" viewBox="0 0 20 20" fill="currentColor">
+                            <path d="M11 3a1 1 0 100 2h3.293l-5.646 5.646a1 1 0 001.414 1.414L16 6.414V10a1 1 0 102 0V4a1 1 0 00-1-1h-6z" />
+                            <path d="M4 11a1 1 0 100 2h6a1 1 0 001-1v-6a1 1 0 10-2 0v5H4z" />
+                        </svg>
+                    </a>
+                </div>
+                <button id="restartBtn" class="button mt-8 bg-gray-600 hover:bg-gray-700 text-white font-bold py-2 px-6 rounded-full shadow-lg">Restart</button>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach(slide => {
+                    slide.classList.remove('active');
+                });
+                if (slides[index]) {
+                    slides[index].classList.add('active');
+                }
+            }
+
+            document.getElementById('nextBtn1').addEventListener('click', () => {
+                currentSlide = 1;
+                showSlide(currentSlide);
+            });
+
+            document.getElementById('prevBtn2').addEventListener('click', () => {
+                currentSlide = 0;
+                showSlide(currentSlide);
+            });
+            document.getElementById('nextBtn2').addEventListener('click', () => {
+                currentSlide = 2;
+                showSlide(currentSlide);
+            });
+
+            document.getElementById('prevBtn3').addEventListener('click', () => {
+                currentSlide = 1;
+                showSlide(currentSlide);
+            });
+            document.getElementById('nextBtn3').addEventListener('click', () => {
+                currentSlide = 3;
+                showSlide(currentSlide);
+            });
+
+            document.getElementById('prevBtn4').addEventListener('click', () => {
+                currentSlide = 2;
+                showSlide(currentSlide);
+            });
+            document.getElementById('nextBtn4').addEventListener('click', () => {
+                currentSlide = 4;
+                showSlide(currentSlide);
+            });
+
+            document.getElementById('restartBtn').addEventListener('click', () => {
+                currentSlide = 0;
+                showSlide(currentSlide);
+            });
+        });
+    </script>
+</body>
+</html>
