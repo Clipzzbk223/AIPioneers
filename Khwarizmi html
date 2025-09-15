@@ -1,0 +1,181 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Al-Khwarizmi: The Father of Algebra</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f4f8;
+            color: #1a202c;
+        }
+        .slide {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+        }
+        .slide.active {
+            opacity: 1;
+        }
+        .content-box {
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            border-radius: 1.5rem;
+            padding: 2.5rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+            width: 90%;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+        .nav-button {
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .nav-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .nav-button:active {
+            transform: translateY(0);
+        }
+        .resource-button {
+            background-color: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .resource-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="flex flex-col items-center justify-center min-h-screen">
+
+    <!-- Slide 1: Title Slide -->
+    <div id="slide1" class="slide active" data-background="#93c5fd">
+        <div class="content-box">
+            <h1 class="text-5xl font-extrabold mb-4 text-gray-800">Al-Khwarizmi</h1>
+            <h2 class="text-2xl font-semibold text-gray-600">The Father of Algebra and Algorithms</h2>
+            <div class="mt-8">
+                <button onclick="nextSlide()" class="nav-button">
+                    Start Presentation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Who Was He? -->
+    <div id="slide2" class="slide" data-background="#60a5fa">
+        <div class="content-box">
+            <h3 class="text-4xl font-bold mb-4 text-gray-800">Who Was He?</h3>
+            <p class="text-lg text-gray-700 leading-relaxed mb-6">
+                Al-Khwarizmi (c. 780 – c. 850 CE) was a Persian polymath who lived and worked at the House of Wisdom in Baghdad during the Islamic Golden Age. He made foundational contributions to mathematics, astronomy, and geography. His work was pivotal in bridging ancient knowledge with the modern world.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <button onclick="prevSlide()" class="nav-button">Back</button>
+                <button onclick="nextSlide()" class="nav-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: The Birth of Algebra -->
+    <div id="slide3" class="slide" data-background="#3b82f6">
+        <div class="content-box">
+            <h3 class="text-4xl font-bold mb-4 text-white">The Birth of Algebra</h3>
+            <p class="text-lg text-white leading-relaxed mb-6">
+                His most famous book, <em>Kitāb al-jabr wa al-muqābalah</em>, gave us the word **"algebra."** The book presented a systematic method for solving linear and quadratic equations. It introduced the two core operations of "al-jabr" (completion) and "al-muqābalah" (balancing), which are the basis for manipulating equations today.
+            </p>
+            <img src="https://placehold.co/400x250/bae6fd/000?text=Page+from+Algebra+Manuscript" alt="A page from an old Arabic algebra manuscript" class="w-full h-auto rounded-xl shadow-lg mt-4 mb-6">
+            <a href="https://www.aljazeera.com/video/science-in-a-golden-age/2015/10/20/al-khwarizmi-the-father-of-algebra" target="_blank" class="resource-button inline-block">Watch a video on Algebra's origin</a>
+            <div class="mt-8 flex justify-center space-x-4">
+                <button onclick="prevSlide()" class="nav-button">Back</button>
+                <button onclick="nextSlide()" class="nav-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Algorithms and Numerals -->
+    <div id="slide4" class="slide" data-background="#1d4ed8">
+        <div class="content-box">
+            <h3 class="text-4xl font-bold mb-4 text-white">Algorithms and Numerals</h3>
+            <p class="text-lg text-white leading-relaxed mb-6">
+                The word **"algorithm"** is a Latinized version of Al-Khwarizmi's name. His work on Hindu-Arabic numerals was crucial in introducing the decimal system, including the concept of zero, to Europe. This provided a far more efficient way to perform calculations.
+            </p>
+            <div class="mt-8 flex flex-col items-center space-y-4">
+                <img src="https://placehold.co/350x200/93c5fd/000?text=Illustration+of+Abacus+and+Numerals" alt="Illustration of an abacus next to Hindu-Arabic numerals" class="w-full h-auto rounded-xl shadow-lg">
+                <p class="text-sm text-gray-200 mt-2">
+                    A conceptual illustration of the shift from counting boards to the modern decimal system.
+                </p>
+                <a href="https://ioinformatics.org/journal/v11si_2017_71_74.pdf" target="_blank" class="resource-button inline-block mt-4">Read about Al-Khwarizmi and algorithms</a>
+            </div>
+            <div class="mt-8 flex justify-center space-x-4">
+                <button onclick="prevSlide()" class="nav-button">Back</button>
+                <button onclick="nextSlide()" class="nav-button">Next</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Legacy and Influence -->
+    <div id="slide5" class="slide" data-background="#0c4a6e">
+        <div class="content-box">
+            <h3 class="text-4xl font-bold mb-4 text-white">Legacy and Influence</h3>
+            <p class="text-lg text-white leading-relaxed mb-6">
+                Al-Khwarizmi's works were translated into Latin and became standard textbooks in Europe for centuries. His methodical approach to problem-solving and his popularization of the decimal system laid the foundation for modern mathematics and computation. His legacy lives on in every equation we solve and every algorithm that powers our digital world.
+            </p>
+            <div class="mt-8 flex justify-center space-x-4">
+                <button onclick="prevSlide()" class="nav-button">Back</button>
+                <button onclick="nextSlide()" class="nav-button">End Presentation</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.remove('active');
+                if (i === index) {
+                    slide.classList.add('active');
+                }
+            });
+            const body = document.body;
+            body.style.backgroundColor = slides[index].getAttribute('data-background');
+        }
+
+        function nextSlide() {
+            currentSlide = (currentSlide + 1) % slides.length;
+            if (currentSlide === 0) {
+                 window.location.reload();
+            }
+            showSlide(currentSlide);
+        }
+
+        function prevSlide() {
+            currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+            showSlide(currentSlide);
+        }
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
