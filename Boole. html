@@ -1,0 +1,214 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>George Boole: The Father of the Digital Age</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+        .slide {
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 2rem;
+            text-align: center;
+        }
+        .slide.active {
+            display: flex;
+        }
+        .slide-content {
+            background-color: #ffffff;
+            border-radius: 1rem;
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            padding: 2.5rem;
+            width: 100%;
+            max-width: 800px;
+        }
+        .slide-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 0.5rem;
+            margin-top: 1.5rem;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .nav-buttons {
+            position: fixed;
+            bottom: 1.5rem;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            gap: 1rem;
+        }
+        .resource-link {
+            display: inline-block;
+            background-color: #3b82f6;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out, transform 0.2s ease-in-out;
+            margin-top: 1rem;
+        }
+        .resource-link:hover {
+            background-color: #2563eb;
+            transform: translateY(-2px);
+        }
+        @media (max-width: 640px) {
+            .slide-content {
+                padding: 1.5rem;
+            }
+            .nav-buttons {
+                flex-direction: column;
+                bottom: 1rem;
+            }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <!-- Slides Container -->
+    <div id="presentation-container" class="w-full">
+        <!-- Slide 1: Title Slide -->
+        <div id="slide-1" class="slide active">
+            <div class="slide-content">
+                <h1 class="text-4xl sm:text-5xl font-bold mb-4">George Boole: The Father of the Digital Age</h1>
+                <p class="text-lg sm:text-xl text-gray-600">How a 19th-Century Mathematician Paved the Way for AI</p>
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/b3/George_Boole_portrait_c1860s.jpg" alt="Portrait of George Boole" class="slide-image">
+                <p class="mt-4 text-sm text-gray-500">
+                    George Boole's work, created long before computers, is the fundamental logic that makes them work.
+                </p>
+            </div>
+        </div>
+
+        <!-- Slide 2: Early Life & Background -->
+        <div id="slide-2" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">A Self-Taught Genius</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Born in Lincoln, England, in 1815, to a working-class family, George Boole had little formal education. He was largely self-taught, with a passion for mathematics and languages, and became a breadwinner for his family at age 16. Despite his lack of a university degree, his genius was recognized, and he was appointed as the first Professor of Mathematics at Queen's College, Cork, Ireland, in 1849.
+                </p>
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Map+of+Lincoln%2C+England" alt="Map of Lincoln, England" class="slide-image">
+            </div>
+        </div>
+
+        <!-- Slide 3: Major Contributions - Boolean Algebra -->
+        <div id="slide-3" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">The Laws of Thought</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Boole's most significant contribution was **Boolean algebra**, a system using symbols to represent logical propositions. His 1854 book, "An Investigation of the Laws of Thought," introduced a system where variables can have only two values: **true** or **false**. He defined fundamental operations: **AND**, **OR**, and **NOT**.
+                </p>
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Excerpt+from+%22The+Laws+of+Thought%22" alt="Excerpt from The Laws of Thought" class="slide-image">
+                <a href="https://www.youtube.com/watch?v=2zRJ1ShMcgA" target="_blank" class="resource-link">
+                    Watch: Boolean Algebra Explained
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 4: Influence on Modern Computing -->
+        <div id="slide-4" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">The Foundation of the Digital World</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    In the 1930s, Claude Shannon realized that Boole's logic could be applied to electrical switching circuits. This discovery led to the development of **logic gates**, the physical components that form the basis of all digital circuits. Every operation in a computer is a complex series of Boolean operations.
+                </p>
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Diagram+of+Logic+Gates" alt="Diagram of Logic Gates" class="slide-image">
+                <a href="https://www.youtube.com/watch?v=dpmnqSOGv4o" target="_blank" class="resource-link">
+                    Watch: How Logic Gates Work
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 5: Influence on Artificial Intelligence -->
+        <div id="slide-5" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">The Blueprint for AI</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    Boole's work is the **conceptual blueprint for AI**. His quest to formalize the laws of human thought mirrors the core goal of AI development. The binary system of 1s and 0s, the language of all AI algorithms, is directly rooted in Boolean logic.
+                </p>
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Illustration+of+a+Neural+Network" alt="Illustration of a Neural Network" class="slide-image">
+                <a href="https://www.youtube.com/watch?v=ad79-H-Yp6o" target="_blank" class="resource-link">
+                    Watch: How AI Works
+                </a>
+            </div>
+        </div>
+
+        <!-- Slide 6: Conclusion -->
+        <div id="slide-6" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl sm:text-4xl font-bold mb-4">The Legacy of George Boole</h2>
+                <p class="text-lg text-gray-700 leading-relaxed">
+                    George Boole, the self-taught mathematician, created a system of logic that became the essential foundation of the digital revolution. His abstract ideas are now embedded in the very fabric of our technological world, making him a true pioneer of the modern era and a foundational figure in the history of artificial intelligence.
+                </p>
+                <img src="https://placehold.co/600x400/e5e7eb/4b5563?text=Modern+Computer+Chip" alt="Modern Computer Chip" class="slide-image">
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation Buttons -->
+    <div class="nav-buttons">
+        <button id="prevBtn" class="bg-gray-300 text-gray-800 font-bold py-2 px-6 rounded-full opacity-50 cursor-not-allowed transition duration-300 ease-in-out hover:bg-gray-400">Previous</button>
+        <button id="nextBtn" class="bg-blue-500 text-white font-bold py-2 px-6 rounded-full transition duration-300 ease-in-out hover:bg-blue-600">Next</button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let currentSlide = 0;
+
+            const showSlide = (index) => {
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                    if (i === index) {
+                        slide.classList.add('active');
+                    }
+                });
+                updateButtons();
+            };
+
+            const updateButtons = () => {
+                prevBtn.disabled = currentSlide === 0;
+                nextBtn.disabled = currentSlide === slides.length - 1;
+
+                if (prevBtn.disabled) {
+                    prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+
+                if (nextBtn.disabled) {
+                    nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            };
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initialize the presentation
+            showSlide(currentSlide);
+        });
+    </script>
+</body>
+</html>
