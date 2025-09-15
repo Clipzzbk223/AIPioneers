@@ -1,0 +1,247 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joseph Weizenbaum: Pioneer and Critic of AI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0d1117;
+            color: #c9d1d9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            padding: 1rem;
+        }
+        .presentation-container {
+            width: 100%;
+            max-width: 900px;
+            height: 100%;
+            max-height: 600px;
+            display: flex;
+            flex-direction: column;
+            background-color: #161b22;
+            border: 1px solid #30363d;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+        .slide {
+            width: 100%;
+            height: 100%;
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 2rem;
+            opacity: 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: flex;
+            opacity: 1;
+        }
+        .slide-content {
+            max-width: 700px;
+        }
+        .navigation-buttons {
+            position: absolute;
+            bottom: 1rem;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            padding: 0 1rem;
+            z-index: 10;
+        }
+        .btn {
+            background-color: #238636;
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 9999px;
+            font-weight: 600;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .btn:hover {
+            background-color: #2ea043;
+        }
+        .btn:disabled {
+            background-color: #444c56;
+            cursor: not-allowed;
+        }
+        .link-btn {
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            color: #58a6ff;
+            padding: 0.5rem 1rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            font-size: 0.875rem;
+            transition: background-color 0.2s ease-in-out;
+        }
+        .link-btn:hover {
+            background-color: #30363d;
+        }
+        .message-box {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: #21262d;
+            border: 1px solid #30363d;
+            border-radius: 8px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+            z-index: 20;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-gray-200 flex flex-col items-center justify-center p-4 min-h-screen">
+
+    <div class="presentation-container">
+
+        <!-- Slide 1: Title -->
+        <div id="slide1" class="slide active">
+            <h1 class="text-4xl md:text-5xl font-bold mb-4">Joseph Weizenbaum</h1>
+            <h2 class="text-xl md:text-2xl font-light text-gray-400">Pioneer and Critic of Artificial Intelligence</h2>
+            <div class="mt-8 overflow-hidden rounded-lg shadow-lg">
+                <img src="https://placehold.co/400x300/161b22/c9d1d9?text=Image+of+Joseph+Weizenbaum" alt="Joseph Weizenbaum" class="w-full h-auto object-cover">
+            </div>
+            <button class="link-btn" onclick="showMessageBox('Watch a documentary on Joseph Weizenbaum', 'https://example.com/weizenbaum-doc')">Watch a Documentary</button>
+        </div>
+
+        <!-- Slide 2: Early Life -->
+        <div id="slide2" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-4">Early Life and Career</h2>
+                <ul class="text-lg text-left space-y-3">
+                    <li>Born in Berlin, Germany, in 1923, to Jewish parents.</li>
+                    <li>Escaped Nazi Germany with his family in 1936, immigrating to the United States.</li>
+                    <li>Studied mathematics at Wayne State University, where he later worked on early digital computers.</li>
+                    <li>Joined MIT in 1963, a pivotal move that led to his most famous work.</li>
+                </ul>
+                <button class="link-btn" onclick="showMessageBox('Read more about his journey to the US', 'https://example.com/early-life')">Read About His Journey</button>
+            </div>
+        </div>
+
+        <!-- Slide 3: ELIZA -->
+        <div id="slide3" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-4">ELIZA: The First Chatbot</h2>
+                <p class="text-lg">
+                    In 1966, Weizenbaum created **ELIZA**, a program that mimicked conversation using simple pattern matching. The most famous script, DOCTOR, simulated a Rogerian psychotherapist.
+                </p>
+                <div class="mt-4 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/400x250/161b22/c9d1d9?text=Image+of+ELIZA+chatbot+conversation" alt="ELIZA chatbot conversation" class="w-full h-auto object-cover">
+                </div>
+                <p class="mt-4 text-lg font-bold">
+                    The "ELIZA Effect": Users often mistook the program's scripted responses for genuine human understanding, a phenomenon that deeply troubled Weizenbaum.
+                </p>
+                <button class="link-btn" onclick="showMessageBox('Try a demonstration of ELIZA', 'https://example.com/eliza-demo')">Try an ELIZA Demo</button>
+            </div>
+        </div>
+
+        <!-- Slide 4: A Critic of AI -->
+        <div id="slide4" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-4">A Philosophical Turn: The Critic of AI</h2>
+                <p class="text-lg mb-4">
+                    Shocked by the human tendency to anthropomorphize machines, Weizenbaum became a vocal critic of AI. He argued that there are certain decisions that computers should never be allowed to make.
+                </p>
+                <div class="mt-4 rounded-lg shadow-lg overflow-hidden">
+                    <img src="https://placehold.co/250x350/161b22/c9d1d9?text=Image+of+the+book+Computer+Power+and+Human+Reason" alt="Computer Power and Human Reason book cover" class="w-auto h-56 object-cover mx-auto">
+                </div>
+                <p class="mt-4 text-lg">
+                    His 1976 book, **"Computer Power and Human Reason,"** remains a foundational text in the field of computer ethics.
+                </p>
+                <button class="link-btn" onclick="showMessageBox('Watch an interview with Weizenbaum', 'https://example.com/weizenbaum-interview')">Watch an Interview</button>
+            </div>
+        </div>
+
+        <!-- Slide 5: Legacy -->
+        <div id="slide5" class="slide">
+            <div class="slide-content">
+                <h2 class="text-3xl font-bold mb-4">His Enduring Legacy in Modern AI</h2>
+                <ul class="text-lg text-left space-y-3">
+                    <li>Weizenbaum's ELIZA laid the groundwork for modern chatbots and conversational AI.</li>
+                    <li>His ethical concerns and warnings are more relevant than ever in the age of large language models like ChatGPT.</li>
+                    <li>He challenged the idea that human intelligence can be fully simulated and that all problems are solvable by computation alone.</li>
+                    <li>His work continues to influence the critical and responsible development of AI today.</li>
+                </ul>
+                <button class="link-btn" onclick="showMessageBox('Read more on Weizenbaums influence today', 'https://example.com/modern-influence')">Read More on His Influence</button>
+            </div>
+        </div>
+
+        <!-- Navigation buttons -->
+        <div class="navigation-buttons">
+            <button id="prevBtn" class="btn" disabled>Previous</button>
+            <button id="nextBtn" class="btn">Next</button>
+        </div>
+
+    </div>
+
+    <!-- Custom message box for links -->
+    <div id="messageBox" class="message-box w-11/12 md:w-2/3 lg:w-1/2">
+        <p id="messageContent" class="mb-4 text-lg"></p>
+        <p class="text-sm text-gray-400 mb-4">Note: This is a placeholder for a link. In a real application, clicking the button would take you to the specified resource.</p>
+        <button onclick="hideMessageBox()" class="btn">Close</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const messageBox = document.getElementById('messageBox');
+        const messageContent = document.getElementById('messageContent');
+        let currentSlide = 0;
+
+        function showSlide(n) {
+            slides.forEach(slide => slide.classList.remove('active'));
+            slides[n].classList.add('active');
+            updateButtons();
+        }
+
+        function nextSlide() {
+            if (currentSlide < slides.length - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        }
+
+        function prevSlide() {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        }
+
+        function updateButtons() {
+            prevBtn.disabled = currentSlide === 0;
+            nextBtn.disabled = currentSlide === slides.length - 1;
+        }
+
+        function showMessageBox(message, url) {
+            messageContent.innerHTML = `<span class="font-bold">${message}</span><br><br>URL: <span class="text-sm break-all text-gray-500">${url}</span>`;
+            messageBox.style.display = 'flex';
+        }
+
+        function hideMessageBox() {
+            messageBox.style.display = 'none';
+        }
+
+        nextBtn.addEventListener('click', nextSlide);
+        prevBtn.addEventListener('click', prevSlide);
+
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
