@@ -1,0 +1,164 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fei-Fei Li: The Pioneer of Computer Vision</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        .btn-link {
+            transition: all 0.3s ease;
+        }
+        .btn-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        /* Custom scrollbar for a cleaner look */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #cbd5e1;
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="presentation-container bg-white shadow-xl rounded-2xl p-8 max-w-4xl w-full mx-4 my-8 relative overflow-hidden">
+
+        <!-- Navigation Buttons -->
+        <div class="navigation-buttons flex justify-center space-x-4 mb-8">
+            <button class="nav-btn bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105" data-slide="early-life">Early Life</button>
+            <button class="nav-btn bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105" data-slide="contributions">Contributions</button>
+            <button class="nav-btn bg-blue-500 text-white font-bold py-2 px-6 rounded-full shadow-lg transition-transform hover:scale-105" data-slide="legacy">Legacy & Influence</button>
+        </div>
+
+        <!-- Slides Container -->
+        <div class="slides-wrapper h-[600px] overflow-y-auto">
+
+            <!-- Slide 1: Early Life -->
+            <div id="early-life" class="slide active p-6 transition-opacity duration-500 ease-in-out">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Fei-Fei Li: Early Life and Education</h1>
+                <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/800x600/a3e635/000000?text=Fei-Fei+Li" onerror="this.src='https://placehold.co/800x600/a3e635/000000?text=Fei-Fei+Li'" alt="An image of Fei-Fei Li" class="rounded-xl shadow-md transform transition-transform hover:scale-105">
+                    </div>
+                    <div class="md:w-1/2">
+                        <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+                            Born in Beijing and raised in Chengdu, China, Fei-Fei Li emigrated to the United States with her family at the age of 15. They settled in Parsippany, New Jersey, where she faced the challenge of learning a new language and culture while working part-time jobs to help support her family.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            Her academic brilliance shone through, and she earned a scholarship to Princeton University. She majored in physics and studied computer science and engineering, showcasing her early curiosity in the fundamental questions of the universe and how to build intelligent systems.
+                        </p>
+                        <a href="https://hai.stanford.edu/news/fei-fei-li-candid-look-young-immigrants-rise-ai-trailblazer" target="_blank" class="btn-link inline-flex items-center justify-center bg-green-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-green-600 transition-colors">
+                            Read More on Her Journey
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 2: Major Contributions -->
+            <div id="contributions" class="slide p-6 transition-opacity duration-500 ease-in-out">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Major Contributions to AI</h1>
+                <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold text-blue-800 mb-4">The ImageNet Project</h3>
+                        <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+                            Fei-Fei Li's most significant contribution is the creation of ImageNet, a massive, hand-annotated visual database with over 14 million images. She pioneered the idea that "data is the new code," shifting the focus of AI research from algorithms alone to the importance of large-scale, high-quality data.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            The ImageNet project was instrumental in the deep learning revolution, providing the data needed to train complex neural networks and enabling significant breakthroughs in computer vision. It is considered one of the three driving forces behind the birth of modern AI.
+                        </p>
+                        <a href="https://www.youtube.com/watch?v=FjI1V19uJ3I" target="_blank" class="btn-link inline-flex items-center justify-center bg-blue-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-blue-600 transition-colors">
+                            Watch a Video on ImageNet
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/800x600/a3e635/000000?text=ImageNet+Project" onerror="this.src='https://placehold.co/800x600/a3e635/000000?text=ImageNet+Project'" alt="A visual representation of the ImageNet dataset" class="rounded-xl shadow-md transform transition-transform hover:scale-105">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Legacy & Influence -->
+            <div id="legacy" class="slide p-6 transition-opacity duration-500 ease-in-out">
+                <h1 class="text-4xl font-extrabold text-gray-900 mb-6 text-center">Legacy and Influence</h1>
+                <div class="flex flex-col md:flex-row items-center space-y-8 md:space-y-0 md:space-x-8">
+                    <div class="md:w-1/2">
+                        <img src="https://placehold.co/800x600/a3e635/000000?text=Human-Centered+AI" onerror="this.src='https://placehold.co/800x600/a3e635/000000?text=Human-Centered+AI'" alt="A diagram representing human-centered AI" class="rounded-xl shadow-md transform transition-transform hover:scale-105">
+                    </div>
+                    <div class="md:w-1/2">
+                        <h3 class="text-3xl font-bold text-purple-800 mb-4">Pioneering Human-Centered AI</h3>
+                        <p class="text-gray-700 text-lg mb-4 leading-relaxed">
+                            Beyond her technical work, Fei-Fei Li is a leading advocate for ethical and human-centered AI. She co-founded and co-directs the Stanford Institute for Human-Centered Artificial Intelligence (HAI), which focuses on advancing AI research and policy to improve the human condition.
+                        </p>
+                        <p class="text-gray-700 text-lg leading-relaxed mb-4">
+                            Her work has fundamentally influenced how we think about AI today, moving the conversation beyond just technical capabilities to its societal impact. Her initiatives, like AI4ALL, also aim to increase diversity and inclusion in AI education, inspiring the next generation of AI leaders.
+                        </p>
+                        <a href="https://hai.stanford.edu/" target="_blank" class="btn-link inline-flex items-center justify-center bg-purple-500 text-white font-bold py-3 px-8 rounded-full shadow-lg hover:bg-purple-600 transition-colors">
+                            Explore Stanford HAI
+                            <svg class="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- JavaScript for slide navigation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const navButtons = document.querySelectorAll('.nav-btn');
+            const slides = document.querySelectorAll('.slide');
+
+            navButtons.forEach(button => {
+                button.addEventListener('click', () => {
+                    const targetSlideId = button.getAttribute('data-slide');
+
+                    // Deactivate all slides and buttons
+                    slides.forEach(slide => slide.classList.remove('active'));
+                    navButtons.forEach(btn => btn.classList.remove('bg-blue-600', 'bg-purple-600', 'bg-green-600'));
+                    navButtons.forEach(btn => btn.classList.add('bg-blue-500'));
+
+                    // Activate the targeted slide and button
+                    document.getElementById(targetSlideId).classList.add('active');
+                    button.classList.remove('bg-blue-500');
+                    if (targetSlideId === 'early-life') {
+                        button.classList.add('bg-green-600');
+                    } else if (targetSlideId === 'contributions') {
+                        button.classList.add('bg-blue-600');
+                    } else if (targetSlideId === 'legacy') {
+                        button.classList.add('bg-purple-600');
+                    }
+                });
+            });
+
+            // Initial state: highlight the first button
+            document.querySelector('.nav-btn[data-slide="early-life"]').classList.remove('bg-blue-500');
+            document.querySelector('.nav-btn[data-slide="early-life"]').classList.add('bg-green-600');
+
+        });
+    </script>
+
+</body>
+</html>
