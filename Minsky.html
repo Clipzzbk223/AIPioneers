@@ -1,0 +1,199 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneer: Marvin Minsky</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .btn-primary {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+        }
+        .btn-primary:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+            transform: translateY(0);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <!-- Presentation Slides Container -->
+        <div id="presentation-container" class="relative p-8 md:p-12">
+            
+            <!-- Slide 1: Title -->
+            <div class="slide active">
+                <div class="text-center">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">The Mind of a Pioneer</h1>
+                    <p class="text-xl md:text-2xl text-indigo-600 mb-6">Marvin Minsky</p>
+                    <img src="https://news.mit.edu/sites/default/files/images/201601/MIT-Marvin-Minsky-1.jpg" alt="Marvin Minsky" class="mx-auto rounded-lg shadow-lg w-1/2" onerror="this.onerror=null;this.src='https://placehold.co/400x400/E2E8F0/4A5568?text=Marvin+Minsky';">
+                    <p class="text-gray-500 mt-6 text-lg">An interactive exploration of his life and legacy in Artificial Intelligence.</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life -->
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Early Life & Education</h2>
+                <ul class="space-y-4 text-lg text-gray-700 list-disc list-inside">
+                    <li>Born in New York City on August 9, 1927.</li>
+                    <li>Attended prestigious schools including the Bronx High School of Science and Phillips Academy.</li>
+                    <li>Served in the U.S. Navy during World War II (1944-1945).</li>
+                    <li>Graduated with honors in mathematics from Harvard University in 1950.</li>
+                    <li>Earned a Ph.D. in mathematics from Princeton University in 1954.</li>
+                    <li class="font-semibold text-indigo-700">In 1951, while at Princeton, he built the first randomly wired neural network learning machine, the SNARC.</li>
+                </ul>
+            </div>
+
+            <!-- Slide 3: Major Contributions -->
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Major Contributions to AI</h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-xl text-indigo-700 mb-2">MIT AI Lab</h3>
+                        <p class="text-gray-600">Co-founded the renowned MIT Artificial Intelligence Laboratory in 1959, establishing it as a global hub for AI research.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-xl text-indigo-700 mb-2">The Society of Mind</h3>
+                        <p class="text-gray-600">Authored the groundbreaking 1985 book proposing that intelligence emerges from the interactions of many simple, non-intelligent "agents."</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-xl text-indigo-700 mb-2">Robotics & Perception</h3>
+                        <p class="text-gray-600">Created robotic systems with arms and cameras to explore how machines could perceive and manipulate the physical world.</p>
+                    </div>
+                    <div class="bg-gray-50 p-4 rounded-lg">
+                        <h3 class="font-semibold text-xl text-indigo-700 mb-2">Key Inventions</h3>
+                        <p class="text-gray-600">Invented the confocal scanning microscope in 1955, an instrument still vital in the biological sciences today.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Influence -->
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Influence on Modern AI</h2>
+                 <ul class="space-y-4 text-lg text-gray-700">
+                    <li><strong class="text-indigo-600">Agent-Based Systems:</strong> His "Society of Mind" theory is a direct intellectual ancestor to modern multi-agent AI systems, where different AI programs collaborate to solve complex problems.</li>
+                    <li><strong class="text-indigo-600">Commonsense Reasoning:</strong> Minsky championed the idea that true AI needs "common sense." This remains one of the most significant and difficult challenges for AI researchers today.</li>
+                    <li><strong class="text-indigo-600">Philosophy of AI:</strong> As a leading thinker on the philosophical implications of AI, his work continues to fuel debates about machine consciousness, creativity, and the future of intelligence.</li>
+                </ul>
+            </div>
+            
+            <!-- Slide 5: Resources -->
+            <div class="slide">
+                <h2 class="text-3xl font-bold text-gray-800 mb-6 text-center">Additional Resources</h2>
+                <p class="text-center text-gray-600 mb-8">Dive deeper into the world of Marvin Minsky with these handpicked resources.</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4">
+                    <a href="https://www.youtube.com/watch?v=DrmnH0xkzQ8" target="_blank" class="btn-primary bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto text-center">
+                        Watch: 1990 Interview
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=Yz4m65nAMjg" target="_blank" class="btn-primary bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto text-center">
+                        Video: Society of Minds
+                    </a>
+                    <a href="https://www.capgemini.com/insights/expert-perspectives/marvin-minskys-timeless-lessons-on-ai-and-collective-intelligence/" target="_blank" class="btn-primary bg-indigo-600 text-white font-bold py-3 px-6 rounded-lg w-full md:w-auto text-center">
+                        Read: Timeless Lessons
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation Controls -->
+        <div class="bg-gray-50 p-4 flex justify-between items-center border-t">
+            <button id="prevBtn" class="btn-primary bg-gray-300 text-gray-700 font-bold py-2 px-6 rounded-lg">
+                Previous
+            </button>
+            <div id="slide-indicator" class="text-gray-600 text-sm font-medium"></div>
+            <button id="nextBtn" class="btn-primary bg-indigo-600 text-white font-bold py-2 px-6 rounded-lg">
+                Next
+            </button>
+        </div>
+
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideIndicator = document.getElementById('slide-indicator');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                // Hide all slides
+                slides.forEach((slide, i) => {
+                    slide.classList.remove('active');
+                });
+
+                // Show the target slide
+                if (slides[index]) {
+                    slides[index].classList.add('active');
+                }
+                
+                // Update current slide index
+                currentSlide = index;
+                updateNav();
+            }
+
+            function updateNav() {
+                // Update slide indicator text
+                slideIndicator.textContent = `Slide ${currentSlide + 1} of ${slides.length}`;
+                
+                // Update Previous button state
+                if (currentSlide === 0) {
+                    prevBtn.disabled = true;
+                    prevBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    prevBtn.disabled = false;
+                    prevBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+                
+                // Update Next button state
+                if (currentSlide === slides.length - 1) {
+                    nextBtn.disabled = true;
+                    nextBtn.classList.add('opacity-50', 'cursor-not-allowed');
+                } else {
+                    nextBtn.disabled = false;
+                    nextBtn.classList.remove('opacity-50', 'cursor-not-allowed');
+                }
+            }
+            
+            // Event Listeners for navigation
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    showSlide(currentSlide - 1);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    showSlide(currentSlide + 1);
+                }
+            });
+            
+            // Initialize the first slide
+            showSlide(0);
+        });
+    </script>
+</body>
+</html>
