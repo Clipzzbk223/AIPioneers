@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Presentation: Herbert A. Simon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        .slide-content {
+            animation: fadeIn 0.8s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen p-4">
+
+    <div class="w-full max-w-4xl bg-white rounded-2xl shadow-2xl overflow-hidden">
+        <!-- Slides Container -->
+        <div id="slides-container" class="relative">
+            <!-- Slide 1: Title -->
+            <div class="slide active">
+                <div class="p-8 md:p-16 text-center slide-content bg-gradient-to-br from-gray-800 to-gray-900 text-white min-h-[500px] flex flex-col justify-center items-center">
+                    <img src="https://placehold.co/150x150/ffffff/333333?text=Herbert+A.+Simon" alt="Herbert A. Simon" class="w-32 h-32 rounded-full mb-6 border-4 border-gray-400">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-2">Herbert A. Simon</h1>
+                    <p class="text-xl md:text-2xl text-gray-300">A Pioneer of Artificial Intelligence</p>
+                </div>
+            </div>
+
+            <!-- Slide 2: Early Life -->
+            <div class="slide">
+                <div class="p-8 md:p-12 slide-content grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[500px]">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Early Life & Education</h2>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Born in Milwaukee, Wisconsin, in 1916.</li>
+                            <li>Excelled as a student, enrolling at the University of Chicago in 1933.</li>
+                            <li>Pursued an interdisciplinary education in social sciences and mathematics.</li>
+                            <li>Earned his B.A. (1936) and Ph.D. (1943) in Political Science.</li>
+                            <li>His dissertation became the influential book "Administrative Behavior."</li>
+                        </ul>
+                        <a href="https://www.nobelprize.org/prizes/economic-sciences/1978/simon/biographical/" target="_blank" class="mt-6 inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition">
+                            Learn More
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2">
+                         <img src="https://placehold.co/500x350/E2E8F0/4A5568?text=University+of+Chicago" alt="University of Chicago" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 3: Major Contributions -->
+            <div class="slide">
+                 <div class="p-8 md:p-12 slide-content grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[500px]">
+                     <div class="order-2 md:order-2">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Major Contributions</h2>
+                        <p class="text-gray-700 mb-4">Simon's work fundamentally changed how we understand decision-making in complex systems.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li><strong class="font-semibold">Bounded Rationality:</strong> Challenged the idea of perfect "economic man," arguing that human rationality is limited by cognitive constraints.</li>
+                            <li><strong class="font-semibold">Satisficing:</strong> Proposed that people seek "good enough" solutions rather than optimal ones.</li>
+                            <li>Awarded the Nobel Prize in Economics in 1978 for this pioneering research.</li>
+                        </ul>
+                        <a href="https://thedecisionlab.com/thinkers/computer-science/herbert-simon" target="_blank" class="mt-6 inline-block bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition">
+                            Explore His Theories
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-1">
+                         <img src="https://placehold.co/500x350/E2E8F0/4A5568?text=Concept+of+Bounded+Rationality" alt="Illustration of Bounded Rationality" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Slide 4: Contributions to AI -->
+            <div class="slide">
+                <div class="p-8 md:p-12 slide-content grid grid-cols-1 md:grid-cols-2 gap-8 items-center min-h-[500px]">
+                    <div class="order-2 md:order-1">
+                        <h2 class="text-3xl font-bold text-gray-800 mb-4">Contributions to AI</h2>
+                        <p class="text-gray-700 mb-4">Simon was a true founder of AI, creating some of the very first intelligent programs.</p>
+                        <ul class="list-disc list-inside space-y-2 text-gray-700">
+                            <li>Co-created the <strong class="font-semibold">Logic Theory Machine (1956)</strong> with Allen Newell, the first program to mimic human problem-solving skills.</li>
+                             <li>Developed the <strong class="font-semibold">General Problem Solver (GPS) (1957)</strong>, a program designed to imitate human problem-solving protocols.</li>
+                             <li>Awarded the A.M. Turing Award in 1975 for his foundational work.</li>
+                        </ul>
+                         <a href="https://amturing.acm.org/award_winners/simon_1031467.cfm" target="_blank" class="mt-6 inline-block bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition">
+                           See Turing Award Info
+                        </a>
+                    </div>
+                    <div class="order-1 md:order-2">
+                         <img src="https://placehold.co/500x350/E2E8F0/4A5568?text=Early+AI+Program+Flowchart" alt="Early AI Program Diagram" class="rounded-lg shadow-md w-full">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Slide 5: Influence on Modern AI -->
+            <div class="slide">
+                 <div class="p-8 md:p-12 slide-content text-center min-h-[500px] flex flex-col justify-center items-center">
+                    <img src="https://placehold.co/600x300/E2E8F0/4A5568?text=Modern+AI+Network" alt="Modern AI" class="rounded-lg shadow-md mb-6 w-full max-w-md">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-4">Influence on Modern AI</h2>
+                    <p class="text-gray-700 max-w-2xl mx-auto mb-6">
+                        Simon's theories remain highly influential. His work on heuristics and simulating human cognition laid the groundwork for modern expert systems, planning algorithms, and cognitive architectures in AI. The idea of "bounded rationality" is critical for creating AI that can make robust decisions in real-world scenarios with incomplete data.
+                    </p>
+                    <a href="https://www.investopedia.com/terms/h/herbert-a-simon.asp" target="_blank" class="bg-red-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-red-700 transition">
+                        Read About His Legacy
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Navigation -->
+        <div class="bg-gray-800 p-4 flex justify-between items-center">
+            <button id="prevBtn" class="bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-500 transition">
+                &larr; Previous
+            </button>
+            <div id="slide-indicator" class="text-white text-sm">
+                Slide 1 / 5
+            </div>
+            <button id="nextBtn" class="bg-gray-600 text-white py-2 px-4 rounded-lg hover:bg-gray-500 transition">
+                Next &rarr;
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // --- JavaScript for Slide Navigation ---
+
+        let currentSlide = 0;
+        const slides = document.querySelectorAll('.slide');
+        const slideIndicator = document.getElementById('slide-indicator');
+        const totalSlides = slides.length;
+
+        // Function to display the correct slide
+        function showSlide(n) {
+            // Hide all slides
+            slides.forEach(slide => {
+                slide.classList.remove('active');
+            });
+
+            // Show the target slide
+            slides[n].classList.add('active');
+
+            // Update the slide indicator text
+            slideIndicator.textContent = `Slide ${n + 1} / ${totalSlides}`;
+        }
+
+        // Event Listeners for Next/Prev Buttons
+        document.getElementById('nextBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide + 1) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        document.getElementById('prevBtn').addEventListener('click', () => {
+            currentSlide = (currentSlide - 1 + totalSlides) % totalSlides;
+            showSlide(currentSlide);
+        });
+
+        // Initialize the first slide
+        showSlide(currentSlide);
+
+    </script>
+</body>
+</html>
