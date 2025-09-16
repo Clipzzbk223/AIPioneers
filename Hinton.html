@@ -1,0 +1,257 @@
+!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneers: Geoffrey Hinton</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+        }
+        .slide.active {
+            display: block;
+        }
+        /* Simple transition for fade-in effect */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        .active {
+            animation: fadeIn 0.5s ease-in-out;
+        }
+    </style>
+</head>
+<body class="bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200 flex flex-col items-center justify-center min-h-screen p-4">
+
+    <div id="presentation-container" class="w-full max-w-4xl bg-white dark:bg-gray-800 rounded-2xl shadow-2xl p-8 md:p-12 overflow-hidden">
+        
+        <!-- Slide 0: Title -->
+        <div class="slide active">
+            <div class="text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-blue-600 dark:text-blue-400">The Legacy of Geoffrey Hinton</h1>
+                <p class="mt-4 text-xl md:text-2xl text-gray-600 dark:text-gray-300">The "Godfather of AI"</p>
+                <img src="https://placehold.co/600x400/E2E8F0/4A5568?text=Geoffrey+Hinton" alt="Geoffrey Hinton" class="mt-8 mx-auto rounded-lg shadow-lg" onerror="this.onerror=null;this.src='https://placehold.co/600x400/E2E8F0/4A5568?text=Image+Not+Found';">
+                <p class="text-sm mt-4 text-gray-500">An interactive presentation on his life and work.</p>
+            </div>
+        </div>
+
+        <!-- Slide 1: Early Life -->
+        <div class="slide">
+            <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">Early Life & Education</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <img src="https://placehold.co/400x300/E2E8F0/4A5568?text=Cambridge+University" alt="Cambridge University" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/E2E8F0/4A5568?text=Image';">
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">&#10148;</span> Born in Wimbledon, London (1947).</li>
+                    <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">&#10148;</span> Great-great-grandson of **George Boole**, whose Boolean algebra is the foundation of modern computing.</li>
+                    <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">&#10148;</span> Graduated from University of Cambridge in Experimental Psychology (1970).</li>
+                    <li class="flex items-start"><span class="text-blue-500 mr-3 mt-1">&#10148;</span> Earned his PhD in Artificial Intelligence from the University of Edinburgh (1978) during the first "AI winter".</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Slide 2: Major Contributions -->
+        <div class="slide">
+            <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">Major Contributions</h2>
+            <div class="space-y-6">
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">Backpropagation (1986)</h3>
+                    <p class="mt-1">Co-authored a famous paper that popularized the backpropagation algorithm. This allowed neural networks to **learn from their mistakes**, making it possible to train deep, complex networks.</p>
+                </div>
+                <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">Boltzmann Machines (1985)</h3>
+                    <p class="mt-1">Co-invented one of the first neural networks capable of **unsupervised learning**, finding hidden patterns in data without explicit labels.</p>
+                </div>
+                 <div class="bg-gray-50 dark:bg-gray-700 p-4 rounded-lg">
+                    <h3 class="text-xl font-semibold">The ImageNet Breakthrough (2012)</h3>
+                    <p class="mt-1">His students created **AlexNet**, a deep neural network that shattered records in image recognition. This event ignited the modern deep learning boom and ended the second "AI winter".</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 3: Influence on Modern AI -->
+        <div class="slide">
+            <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">Influence on Modern AI</h2>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+                <ul class="space-y-4 text-lg">
+                    <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">&#10004;</span> **Foundation of LLMs:** The principles of training deep networks are core to models like ChatGPT and Gemini.</li>
+                    <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">&#10004;</span> **Computer Vision:** Powers self-driving cars, medical image analysis, and facial recognition.</li>
+                    <li class="flex items-start"><span class="text-green-500 mr-3 mt-1">&#10004;</span> **Everyday Tech:** His work underpins recommendation engines (Netflix, Amazon) and voice assistants (Siri, Alexa).</li>
+                </ul>
+                 <img src="https://placehold.co/400x300/2D3748/E2E8F0?text=Modern+AI+Applications" alt="Modern AI" class="rounded-lg shadow-md" onerror="this.onerror=null;this.src='https://placehold.co/400x300/2D3748/E2E8F0?text=Image';">
+            </div>
+        </div>
+
+        <!-- Slide 4: Code Example -->
+        <div class="slide">
+            <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-4">Complete Neural Network Code</h2>
+            <p class="mb-4 text-gray-600 dark:text-gray-300">This complete Python script builds a neural network from scratch to solve the XOR problem. It demonstrates the core concepts of feedforward and backpropagation that Hinton helped popularize. You need the `numpy` library to run it.</p>
+            <pre class="bg-gray-900 text-white p-6 rounded-lg overflow-x-auto text-sm"><code class="language-python">
+import numpy as np
+
+# Sigmoid activation function and its derivative
+def sigmoid(x):
+    return 1 / (1 + np.exp(-x))
+
+def sigmoid_derivative(x):
+    return x * (1 - x)
+
+class NeuralNetwork:
+    def __init__(self, x, y, hidden_nodes=4):
+        self.input = x
+        # Add a bias node to the input
+        self.input_with_bias = np.hstack([self.input, np.ones((self.input.shape[0], 1))])
+        
+        self.y = y
+        self.output = np.zeros(self.y.shape)
+        
+        # Initialize weights randomly with mean 0
+        self.weights1 = np.random.rand(self.input_with_bias.shape[1], hidden_nodes) 
+        self.weights2 = np.random.rand(hidden_nodes, 1)
+
+    def feedforward(self):
+        # Calculate hidden layer activations
+        self.layer1 = sigmoid(np.dot(self.input_with_bias, self.weights1))
+        # Calculate output layer activations
+        self.output = sigmoid(np.dot(self.layer1, self.weights2))
+
+    def backprop(self, learning_rate=0.1):
+        # Calculate the error and delta for the output layer
+        output_error = self.y - self.output
+        output_delta = output_error * sigmoid_derivative(self.output)
+        
+        # Calculate the error and delta for the hidden layer
+        layer1_error = output_delta.dot(self.weights2.T)
+        layer1_delta = layer1_error * sigmoid_derivative(self.layer1)
+        
+        # Calculate weight adjustments
+        d_weights2 = self.layer1.T.dot(output_delta)
+        d_weights1 = self.input_with_bias.T.dot(layer1_delta)
+        
+        # Update the weights
+        self.weights1 += learning_rate * d_weights1
+        self.weights2 += learning_rate * d_weights2
+
+    def train(self, epochs=10000):
+        for i in range(epochs):
+            self.feedforward()
+            self.backprop()
+            if (i % 1000) == 0:
+                loss = np.mean(np.square(self.y - self.output))
+                print(f"Epoch: {i}, Loss: {loss:.4f}")
+
+    def predict(self, data):
+        data_with_bias = np.hstack([data, np.ones((data.shape[0], 1))])
+        layer1 = sigmoid(np.dot(data_with_bias, self.weights1))
+        return sigmoid(np.dot(layer1, self.weights2))
+
+# --- Example Usage: Solving the XOR problem ---
+if __name__ == "__main__":
+    # Input data for XOR
+    X = np.array([[0,0],
+                  [0,1],
+                  [1,0],
+                  [1,1]])
+    # Expected output for XOR
+    Y = np.array([[0],
+                  [1],
+                  [1],
+                  [0]])
+
+    # Initialize and train the neural network
+    nn = NeuralNetwork(X, Y)
+    nn.train()
+
+    # Make predictions
+    predictions = nn.predict(X)
+
+    print("\n--- Predictions after training ---")
+    for i in range(len(X)):
+        print(f"Input: {X[i]} -> Output: {predictions[i][0]:.4f} (Expected: {Y[i][0]})")
+
+</code></pre>
+        </div>
+
+        <!-- Slide 5: Resources -->
+        <div class="slide">
+            <h2 class="text-3xl font-bold text-blue-600 dark:text-blue-400 mb-6">Further Resources</h2>
+            <p class="mb-8 text-lg">Explore more about Geoffrey Hinton and the concepts he pioneered.</p>
+            <div class="grid sm:grid-cols-2 gap-6">
+                <a href="https://www.youtube.com/watch?v=XG-kW_39UIc" target="_blank" class="block bg-red-500 hover:bg-red-600 text-white font-bold py-4 px-6 rounded-lg text-center transition-transform transform hover:scale-105">
+                    <span class="text-2xl">📺</span>
+                    <span class="block mt-2">Video: Hinton on Deep Learning</span>
+                </a>
+                <a href="https://www.cs.toronto.edu/~hinton/absps/NatureDeepReview.pdf" target="_blank" class="block bg-green-500 hover:bg-green-600 text-white font-bold py-4 px-6 rounded-lg text-center transition-transform transform hover:scale-105">
+                    <span class="text-2xl">📄</span>
+                    <span class="block mt-2">Paper: Deep Learning in Nature</span>
+                </a>
+                 <a href="https://en.wikipedia.org/wiki/Backpropagation" target="_blank" class="block bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-4 px-6 rounded-lg text-center transition-transform transform hover:scale-105">
+                    <span class="text-2xl">💡</span>
+                    <span class="block mt-2">Illustration: Backpropagation</span>
+                </a>
+                 <a href="https://www.youtube.com/watch?v=aircAruvnKk" target="_blank" class="block bg-purple-500 hover:bg-purple-600 text-white font-bold py-4 px-6 rounded-lg text-center transition-transform transform hover:scale-105">
+                    <span class="text-2xl">🧠</span>
+                    <span class="block mt-2">Video: How Neural Networks Work</span>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="flex justify-between w-full max-w-4xl mt-6">
+        <button id="prevBtn" class="bg-gray-300 dark:bg-gray-600 hover:bg-gray-400 dark:hover:bg-gray-500 text-gray-800 dark:text-white font-bold py-2 px-6 rounded-lg transition disabled:opacity-50 disabled:cursor-not-allowed">
+            Previous
+        </button>
+        <div id="slide-counter" class="text-gray-600 dark:text-gray-400 flex items-center"></div>
+        <button id="nextBtn" class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-6 rounded-lg transition">
+            Next
+        </button>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slides = document.querySelectorAll('.slide');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            const slideCounter = document.getElementById('slide-counter');
+            let currentSlide = 0;
+
+            function showSlide(index) {
+                slides.forEach((slide, i) => {
+                    slide.classList.toggle('active', i === index);
+                });
+                
+                // Update button states
+                prevBtn.disabled = index === 0;
+                nextBtn.disabled = index === slides.length - 1;
+
+                // Update counter
+                slideCounter.textContent = `Slide ${index + 1} of ${slides.length}`;
+            }
+
+            prevBtn.addEventListener('click', () => {
+                if (currentSlide > 0) {
+                    currentSlide--;
+                    showSlide(currentSlide);
+                }
+            });
+
+            nextBtn.addEventListener('click', () => {
+                if (currentSlide < slides.length - 1) {
+                    currentSlide++;
+                    showSlide(currentSlide);
+                }
+            });
+
+            // Initial setup
+            showSlide(currentSlide);
+        });
+    </script>
+
+</body>
+</html>
