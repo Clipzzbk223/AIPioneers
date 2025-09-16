@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Pioneers: Ashish Vaswani</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .slide {
+            display: none;
+            animation: fadeIn 0.5s ease-in-out;
+        }
+        .slide.active {
+            display: block;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: scale(0.98); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        .glass-panel {
+             background: rgba(255, 255, 255, 0.1);
+             backdrop-filter: blur(10px);
+             -webkit-backdrop-filter: blur(10px);
+             border-radius: 1rem;
+             border: 1px solid rgba(255, 255, 255, 0.18);
+             box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        }
+    </style>
+</head>
+<body class="bg-gray-900 text-white flex flex-col items-center justify-center min-h-screen p-4 overflow-hidden">
+    <div class="w-full max-w-4xl h-[600px] relative">
+        <!-- Slide 1: Title -->
+        <div id="slide-1" class="slide active w-full h-full flex flex-col items-center justify-center text-center p-8 bg-gradient-to-br from-indigo-900 to-gray-900 rounded-2xl shadow-2xl">
+            <h1 class="text-5xl md:text-6xl font-bold tracking-tight text-white leading-tight">Ashish Vaswani</h1>
+            <p class="mt-4 text-xl md:text-2xl text-indigo-200">The Architect of Modern AI</p>
+            <img src="https://placehold.co/150x150/4f46e5/ffffff?text=AV" alt="Ashish Vaswani" class="mt-8 rounded-full border-4 border-indigo-400 shadow-lg">
+            <p class="mt-6 text-lg text-gray-300 max-w-2xl">A research project on the pioneer whose work on the Transformer architecture laid the foundation for today's generative AI revolution.</p>
+        </div>
+
+        <!-- Slide 2: Early Life & Education -->
+        <div id="slide-2" class="slide w-full h-full flex flex-col md:flex-row items-center justify-center p-8 glass-panel">
+            <div class="md:w-1/2 text-center md:text-left">
+                <h2 class="text-3xl font-bold text-cyan-300">Early Life & Education</h2>
+                <ul class="mt-4 text-lg space-y-3 list-disc list-inside text-gray-200">
+                    <li>Grew up in Oman and later Nagpur, India, showing an early fascination with science and math.</li>
+                    <li>Earned his B.Tech in Computer Science from Birla Institute of Technology, Mesra.</li>
+                    <li>Moved to the U.S. and completed his Ph.D. in Computer Science at the University of Southern California (USC).</li>
+                    <li>His doctoral advisor noted he was a "visionary" who saw the potential for deep learning in NLP as early as 2011.</li>
+                </ul>
+            </div>
+            <div class="md:w-1/2 mt-8 md:mt-0 flex justify-center">
+                <img src="https://placehold.co/400x300/1e293b/ffffff?text=USC+Campus" alt="University of Southern California" class="rounded-lg shadow-xl border-2 border-cyan-500/50">
+            </div>
+        </div>
+
+        <!-- Slide 3: The Landmark Paper -->
+        <div id="slide-3" class="slide w-full h-full flex flex-col items-center justify-center p-8 glass-panel text-center">
+            <h2 class="text-3xl font-bold text-fuchsia-300">"Attention Is All You Need" (2017)</h2>
+            <p class="mt-2 text-lg text-gray-300">The paper that changed everything.</p>
+            <div class="my-6 p-6 bg-gray-800 rounded-lg shadow-inner max-w-3xl">
+                <p class="text-gray-200">Authored by Vaswani and seven other Google researchers, this paper introduced a novel network architecture: <strong class="text-white">the Transformer</strong>. It moved away from the sequential nature of RNNs and LSTMs, which were slow and struggled with long-range dependencies in text.</p>
+            </div>
+            <img src="https://placehold.co/500x200/1e293b/ffffff?text=Attention+Is+All+You+Need" alt="Attention Is All You Need Paper Title" class="rounded-lg shadow-lg border-2 border-fuchsia-500/50 my-4">
+            <a href="https://arxiv.org/abs/1706.03762" target="_blank" class="mt-4 px-6 py-3 bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105">
+                Read the Paper
+            </a>
+        </div>
+
+        <!-- Slide 4: The Transformer Architecture -->
+        <div id="slide-4" class="slide w-full h-full flex flex-col items-center justify-center p-8 glass-panel text-center">
+             <h2 class="text-3xl font-bold text-teal-300">The Transformer Architecture</h2>
+             <p class="mt-2 text-lg text-gray-300">A new paradigm for sequence modeling.</p>
+             <div class="flex flex-col md:flex-row items-center mt-6 w-full">
+                <div class="md:w-1/2 p-4">
+                     <img src="https://www.researchgate.net/profile/Stefan-Schneegass/publication/359998894/figure/fig3/AS:1143128590684260@1649557685603/The-transformer-architecture-as-proposed-in-the-original-paper-by-Vaswani-et-al-2017.png" onerror="this.onerror=null; this.src='https://placehold.co/400x350/1e293b/ffffff?text=Transformer+Diagram';" alt="Transformer Architecture Diagram" class="rounded-lg shadow-xl bg-white p-2">
+                </div>
+                <div class="md:w-1/2 text-left p-4">
+                    <ul class="text-lg space-y-3 list-disc list-inside text-gray-200">
+                        <li>Relies entirely on <strong class="text-white">self-attention mechanisms</strong> to draw global dependencies between input and output.</li>
+                        <li>Processes entire sequences of data at once, enabling massive <strong class="text-white">parallelization</strong>.</li>
+                        <li>This dramatically reduced training times and allowed for much larger and more powerful models.</li>
+                    </ul>
+                     <a href="https://www.youtube.com/watch?v=4Bdc55j80l8" target="_blank" class="inline-block mt-6 px-6 py-3 bg-teal-600 hover:bg-teal-700 text-white font-semibold rounded-lg shadow-md transition-transform transform hover:scale-105">
+                        Watch an Explanation
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Slide 5: Impact on Modern AI -->
+        <div id="slide-5" class="slide w-full h-full flex flex-col items-center justify-center p-8 glass-panel text-center">
+            <h2 class="text-3xl font-bold text-amber-300">Foundation for the AI Boom</h2>
+            <p class="mt-2 text-lg text-gray-300">The Transformer is the core of nearly all modern large language models (LLMs).</p>
+            <div class="mt-8 grid grid-cols-2 md:grid-cols-3 gap-6 items-center">
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
+                    <img src="https://placehold.co/80x80/1e293b/ffffff?text=BERT" alt="BERT Logo" class="h-16 w-16 mb-2">
+                    <span class="font-semibold">Google BERT</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
+                    <img src="https://placehold.co/80x80/1e293b/ffffff?text=GPT" alt="GPT Logo" class="h-16 w-16 mb-2">
+                    <span class="font-semibold">OpenAI GPT Series</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
+                    <img src="https://placehold.co/80x80/1e293b/ffffff?text=T5" alt="T5 Logo" class="h-16 w-16 mb-2">
+                    <span class="font-semibold">Google T5</span>
+                </div>
+                 <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg">
+                    <img src="https://placehold.co/80x80/1e293b/ffffff?text=LLaMA" alt="LLaMA Logo" class="h-16 w-16 mb-2">
+                    <span class="font-semibold">Meta LLaMA</span>
+                </div>
+                <div class="flex flex-col items-center p-4 bg-gray-800 rounded-lg col-span-2 md:col-span-1">
+                    <span class="text-5xl">... and many more</span>
+                </div>
+            </div>
+            <p class="mt-8 text-xl text-gray-200">This work enabled the advanced capabilities we see today in chatbots, code generators, translation services, and creative tools.</p>
+        </div>
+        
+        <!-- Slide 6: Beyond Google -->
+        <div id="slide-6" class="slide w-full h-full flex flex-col items-center justify-center p-8 glass-panel">
+            <h2 class="text-3xl font-bold text-rose-300 text-center">Entrepreneurial Ventures</h2>
+            <p class="mt-2 text-lg text-gray-300 text-center">After over five years at Google Brain, Vaswani co-founded two AI startups.</p>
+            <div class="mt-8 flex flex-col md:flex-row gap-8 w-full max-w-3xl">
+                <div class="flex-1 p-6 bg-gray-800/50 rounded-lg text-center">
+                    <img src="https://placehold.co/100x100/1e293b/ffffff?text=Adept" alt="Adept AI Logo" class="mx-auto h-20 mb-4">
+                    <h3 class="text-2xl font-semibold">Adept AI Labs (2022)</h3>
+                    <p class="mt-2 text-gray-300">Focused on building general intelligence and a "universal collaborator" to automate software tasks.</p>
+                </div>
+                <div class="flex-1 p-6 bg-gray-800/50 rounded-lg text-center">
+                    <img src="https://placehold.co/100x100/1e293b/ffffff?text=Essential" alt="Essential AI Logo" class="mx-auto h-20 mb-4">
+                    <h3 class="text-2xl font-semibold">Essential AI (2023)</h3>
+                    <p class="mt-2 text-gray-300">Aims to deepen the human-computer relationship and solve complex enterprise challenges with AI.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Navigation -->
+    <div class="mt-8 flex items-center gap-4">
+        <button id="prevBtn" class="px-5 py-2.5 bg-gray-700 hover:bg-gray-600 text-white font-semibold rounded-lg shadow-md transition disabled:opacity-50 disabled:cursor-not-allowed">Previous</button>
+        <span id="slide-counter" class="text-lg font-medium text-gray-400">1 / 6</span>
+        <button id="nextBtn" class="px-5 py-2.5 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold rounded-lg shadow-md transition">Next</button>
+    </div>
+
+    <script>
+        const slides = document.querySelectorAll('.slide');
+        const prevBtn = document.getElementById('prevBtn');
+        const nextBtn = document.getElementById('nextBtn');
+        const slideCounter = document.getElementById('slide-counter');
+        let currentSlide = 0;
+        const totalSlides = slides.length;
+
+        function showSlide(index) {
+            slides.forEach((slide, i) => {
+                slide.classList.toggle('active', i === index);
+            });
+            slideCounter.textContent = `${index + 1} / ${totalSlides}`;
+            prevBtn.disabled = index === 0;
+            nextBtn.disabled = index === totalSlides - 1;
+            
+            // Re-style next button on last slide
+            if (index === totalSlides - 1) {
+                nextBtn.textContent = 'End';
+                nextBtn.classList.remove('bg-indigo-600', 'hover:bg-indigo-700');
+                nextBtn.classList.add('bg-green-600', 'hover:bg-green-700');
+            } else {
+                 nextBtn.textContent = 'Next';
+                 nextBtn.classList.remove('bg-green-600', 'hover:bg-green-700');
+                 nextBtn.classList.add('bg-indigo-600', 'hover:bg-indigo-700');
+            }
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentSlide > 0) {
+                currentSlide--;
+                showSlide(currentSlide);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentSlide < totalSlides - 1) {
+                currentSlide++;
+                showSlide(currentSlide);
+            }
+        });
+
+        // Initialize first slide
+        showSlide(currentSlide);
+    </script>
+</body>
+</html>
