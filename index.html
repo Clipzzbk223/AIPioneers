@@ -1,10 +1,227 @@
+
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>My Awesome Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Pioneers of Artificial Intelligence</title>
+    <style>
+        /* --- General Body & Font Styles --- */
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: #f0f2f5;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+            line-height: 1.6;
+        }
+
+        /* --- Header & Title Styles --- */
+        .header {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #ffffff;
+            border-bottom: 4px solid #0056b3;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+
+        .header h1 {
+            color: #004085;
+            font-size: 2.8em;
+            margin: 0;
+        }
+
+        /* --- Introduction Paragraph --- */
+        .intro {
+            max-width: 800px;
+            margin: 0 auto 40px auto;
+            text-align: center;
+            font-size: 1.1em;
+            color: #555;
+        }
+
+        /* --- Pioneer Grid Layout --- */
+        .pioneer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* --- Pioneer Card Styling --- */
+        .pioneer-card {
+            background-color: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+            text-align: center;
+            padding: 25px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .pioneer-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+        }
+
+        /* --- Pioneer Image --- */
+        .pioneer-card img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e9ecef;
+            margin-bottom: 15px;
+        }
+        
+        /* --- Pioneer Name & Timeframe --- */
+        .pioneer-card h2 {
+            font-size: 1.5em;
+            color: #343a40;
+            margin: 10px 0 5px 0;
+        }
+
+        .pioneer-card .timeframe {
+            color: #6c757d;
+            font-size: 0.95em;
+            margin-bottom: 20px;
+        }
+
+        /* --- Action Button Styling --- */
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            font-size: 1em;
+            font-weight: bold;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+        
+        /* --- Unique Button Colors --- */
+        .btn-1 { background-color: #007BFF; } /* Blue */
+        .btn-2 { background-color: #6F42C1; } /* Indigo */
+        .btn-3 { background-color: #DC3545; } /* Red */
+        .btn-4 { background-color: #28A745; } /* Green */
+        .btn-5 { background-color: #FD7E14; } /* Orange */
+        .btn-6 { background-color: #17A2B8; } /* Teal */
+        .btn-7 { background-color: #FFC107; color: #333; } /* Yellow */
+        .btn-8 { background-color: #6610F2; } /* Violet */
+        .btn-9 { background-color: #E83E8C; } /* Pink */
+        .btn-10 { background-color: #20C997; } /* Cyan */
+        .btn-11 { background-color: #6C757D; } /* Gray */
+        .btn-12 { background-color: #343A40; } /* Dark Gray */
+
+    </style>
 </head>
 <body>
-<h1>Hello, World!</h1>
-<p>Welcome to my first GitHub Pages website.</p>
+
+    <header class="header">
+        <h1>The Pioneers of Artificial Intelligence</h1>
+    </header>
+
+    <main>
+        <p class="intro">
+            An AI Pioneer is a visionary thinker, scientist, or engineer whose groundbreaking ideas and work laid the essential foundations for the field of artificial intelligence. These individuals challenged the limits of computation and human understanding, introducing revolutionary concepts, algorithms, and philosophies that continue to shape technology and our world today. Explore their stories and discover the origins of modern AI.
+        </p>
+
+        <div class="pioneer-grid">
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/007BFF/FFFFFF?text=Image" alt="Al-Khwarizmi">
+                <h2>Al-Khwarizmi</h2>
+                <p class="timeframe">c. 780 – c. 850</p>
+                <a href="Khwarizimi.html" class="btn btn-1">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/6F42C1/FFFFFF?text=Image" alt="George Boole">
+                <h2>George Boole</h2>
+                <p class="timeframe">1815–1864</p>
+                <a href="Boole.html" class="btn btn-2">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                 <img src="https://via.placeholder.com/150/DC3545/FFFFFF?text=Image" alt="Arthur Samuel">
+                <h2>Arthur Samuel</h2>
+                <p class="timeframe">1901-1990</p>
+                <a href="Samuel.html" class="btn btn-3">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                 <img src="https://via.placeholder.com/150/28A745/FFFFFF?text=Image" alt="Alan Turing">
+                <h2>Alan Turing</h2>
+                <p class="timeframe">1912–1954</p>
+                <a href="Turing.html" class="btn btn-4">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/FD7E14/FFFFFF?text=Image" alt="Herbert Simon">
+                <h2>Herbert Simon</h2>
+                <p class="timeframe">1916–2001</p>
+                <a href="Simon.html" class="btn btn-5">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/17A2B8/FFFFFF?text=Image" alt="Joseph Weizenbaum">
+                <h2>Joseph Weizenbaum</h2>
+                <p class="timeframe">1923-2008</p>
+                <a href="Weizenbaum.html" class="btn btn-6">Learn More</a>
+            </div>
+            
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/FFC107/333333?text=Image" alt="John McCarthy">
+                <h2>John McCarthy</h2>
+                <p class="timeframe">1927–2011</p>
+                <a href="McCarthy.html" class="btn btn-7">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/6610F2/FFFFFF?text=Image" alt="Marvin Minsky">
+                <h2>Marvin Minsky</h2>
+                <p class="timeframe">1927–2016</p>
+                <a href="Minsky.html" class="btn btn-8">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/E83E8C/FFFFFF?text=Image" alt="Allen Newell">
+                <h2>Allen Newell</h2>
+                <p class="timeframe">1927-1992</p>
+                <a href="Newell.html" class="btn btn-9">Learn More</a>
+            </div>
+            
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/20C997/FFFFFF?text=Image" alt="Geoffrey Hinton">
+                <h2>Geoffrey Hinton</h2>
+                <p class="timeframe">1947–Present</p>
+                <a href="Hinton.html" class="btn btn-10">Learn More</a>
+            </div>
+
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/6C757D/FFFFFF?text=Image" alt="Fei-Fei Li">
+                <h2>Fei-Fei Li</h2>
+                <p class="timeframe">1976–Present</p>
+                <a href="Li.html" class="btn btn-11">Learn More</a>
+            </div>
+            
+            <div class="pioneer-card">
+                <img src="https://via.placeholder.com/150/343A40/FFFFFF?text=Image" alt="Ashish Vaswani">
+                <h2>Ashish Vaswani</h2>
+                <p class="timeframe">Contemporary</p>
+                <a href="Vaswani.html" class="btn btn-12">Learn More</a>
+            </div>
+
+        </div>
+    </main>
+
 </body>
 </html>
